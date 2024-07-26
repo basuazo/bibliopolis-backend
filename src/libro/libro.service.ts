@@ -6,7 +6,7 @@ export class LibroService {
   private libros: Libro[] = [];
 
   // crear un nuevo libro, debe verificar que el ISBN no exista.
-  crearLibro(libro: Libro): Libro {
+  crearLibro(libro: Libro): void {
     for (let i: number = 0; i < this.libros.length; i++) {
       if (this.libros[i].isbn == libro.isbn) {
       }

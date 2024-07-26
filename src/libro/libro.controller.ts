@@ -15,7 +15,7 @@ export class LibroController {
   constructor(private readonly servicio: LibroService) {}
   //crear un libro nuevo
   @Post()
-  crearLibro(@Body() libro: Libro): Libro {
+  crearLibro(@Body() libro: Libro): void {
     return this.servicio.crearLibro(libro);
   }
   //Obtener libro por ISBN

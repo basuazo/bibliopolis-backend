@@ -3,7 +3,7 @@ import { itemPedido } from './itempedido';
 
 export class Pedido {
   constructor(
-    public id: string,
+    public id: number,
     public usuario: Usuario,
     public fechaPedido: Date,
     public estado: string,

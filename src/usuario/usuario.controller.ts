@@ -8,7 +8,7 @@ export class UsuarioController {
   constructor(private readonly servicio: UsuarioService) {}
   // crear usuario
   @Post()
-  crearUsuario(@Body() usuario: Usuario): Usuario {
+  crearUsuario(@Body() usuario: Usuario): void {
     return this.servicio.crearUsuario(usuario);
   }
 

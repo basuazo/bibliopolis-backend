@@ -8,7 +8,7 @@ export class UsuarioService {
   private usuarios: Usuario[] = [];
 
   //agregar usuario
-  crearUsuario(usuario: Usuario): Usuario {
+  crearUsuario(usuario: Usuario): void {
     usuario.id = this.usuarios.length + 1;
     for (let i: number = 0; i < this.usuarios.length; i++) {
       if (this.usuarios[i].correoElectronico == usuario.correoElectronico) {
